@@ -1,0 +1,72 @@
+:root {
+  --nav-background-color: #b11226;
+  --nav-text-color: #fff;
+  --nav-underline-color: #fff;
+  --search-btn-input-color: #fff;
+  --search-btn-input-background: transparent;
+  --input-placeholder-color: #fff;
+}
+.header {
+  width: 72em;
+  height: 3.7em;
+  display: flex;
+  align-items: center;
+  background-color: var(--nav-background-color);
+  padding: 0 10%;
+  color: var(--nav-text-color);
+}
+.logo {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-family: "Ranchers", cursive;
+}
+
+.list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+  width: 30em;
+  margin: 4em;
+  padding: 0;
+}
+.nav_item {
+  text-decoration: none;
+  position: relative;
+  padding: 0.3em 0;
+  color: var(--nav-text-color);
+}
+.nav_item:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 0;
+  height: 2px;
+  background-color: var(--nav-underline-color);
+  transition: width 0.3s ease-in-out;
+}
+.nav_item:hover:after {
+  width: 100%;
+}
+.nav_item:hover {
+  opacity: 0.8;
+}
+.search {
+  width: 10em;
+  height: 3em;
+  position: absolute;
+  top: 0.5%;
+  left: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+.btn,
+.input {
+  background-color: var(--search-btn-input-background);
+  border: none;
+  outline: none;
+  color: var(--search-btn-input-color);
+}
+.input::placeholder {
+  color: var(--input-placeholder-color);
+}
