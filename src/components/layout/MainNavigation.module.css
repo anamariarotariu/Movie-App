@@ -5,6 +5,7 @@
   --search-btn-input-color: #fff;
   --search-btn-input-background: transparent;
   --input-placeholder-color: #fff;
+  --search-border-color: #fff;
 }
 .header {
   width: 72em;
@@ -52,13 +53,13 @@
   opacity: 0.8;
 }
 .search {
-  width: 10em;
+  width: 14em;
   height: 3em;
   position: absolute;
   top: 0.5%;
   left: 70%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
 .btn,
 .input {
@@ -69,4 +70,9 @@
 }
 .input::placeholder {
   color: var(--input-placeholder-color);
+}
+.search:focus-within {
+  opacity: 0.9;
+  border: 1px solid var(--search-border-color);
+  border-radius: 0.4em;
 }
