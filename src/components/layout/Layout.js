@@ -1,10 +1,11 @@
 import MainNavigation from "./MainNavigation";
 import Footer from "./Footer";
-function Layout() {
+import styles from "./Layout.module.css";
+function Layout(props) {
   return (
     <div>
       <MainNavigation></MainNavigation>
-      <main></main>
+      <main className={styles.main}>{props.children}</main>
       <Footer></Footer>
     </div>
   );
