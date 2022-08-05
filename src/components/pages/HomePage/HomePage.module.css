@@ -1,0 +1,18 @@
+:root {
+  --default-background-color: #000;
+  --title-color: #fff;
+}
+body {
+  background-color: var(--default-background-color);
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 5em;
+  width: 100%;
+}
+.title {
+  font-size: 25px;
+  color: var(--title-color);
+  margin: 2em 8em;
+}

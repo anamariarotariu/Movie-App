@@ -1,0 +1,42 @@
+.details_card {
+  color: #fff;
+  border: 1px solid red;
+  width: 80em;
+  height: 30em;
+  margin: 3em;
+  border-radius: 0.5em;
+  padding: 2em;
+  box-shadow: 5px 5px 2px red;
+}
+.image_container {
+  position: relative;
+  height: 0;
+  padding-bottom: 70%;
+}
+.image_container img {
+  position: absolute;
+  width: 30%;
+  height: 53%;
+  object-fit: cover;
+}
+.text_details {
+  color: #fff;
+  width: 45em;
+  height: 27em;
+  position: absolute;
+  left: 40%;
+  top: 23%;
+}
+.title {
+  font-size: 26px;
+}
+.tagline {
+  font-size: 14px;
+  color: #ddd;
+  margin: 1em 0;
+}
+.description {
+  margin: 3em 0;
+  line-height: 1.4em;
+  font-size: 16px;
+}

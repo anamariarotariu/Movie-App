@@ -6,6 +6,7 @@
   --search-btn-input-background: transparent;
   --input-placeholder-color: #fff;
   --search-border-color: #fff;
+  --default-background: #b11226;
 }
 .header {
   width: 72em;
@@ -20,8 +21,15 @@
   font-size: 24px;
   text-transform: uppercase;
   font-family: "Ranchers", cursive;
+  background-color: var(--default-background);
 }
-
+nav {
+  position: absolute;
+  background-color: var(--default-background);
+  height: 11%;
+  bottom: 95%;
+  left: 30%;
+}
 .list {
   list-style-type: none;
   display: flex;
@@ -29,11 +37,13 @@
   width: 30em;
   margin: 4em;
   padding: 0;
+  background-color: var(--default-background);
 }
 .nav_item {
   text-decoration: none;
   position: relative;
   padding: 0.3em 0;
+  background-color: var(--default-background);
   color: var(--nav-text-color);
 }
 .nav_item:after {
@@ -56,10 +66,11 @@
   width: 14em;
   height: 3em;
   position: absolute;
-  top: 0.5%;
-  left: 70%;
+  top: 60%;
+  left: 95%;
   display: flex;
   justify-content: flex-start;
+  border-radius: 0.4em;
 }
 .btn,
 .input {
@@ -72,7 +83,5 @@
   color: var(--input-placeholder-color);
 }
 .search:focus-within {
-  opacity: 0.9;
   border: 1px solid var(--search-border-color);
-  border-radius: 0.4em;
 }
