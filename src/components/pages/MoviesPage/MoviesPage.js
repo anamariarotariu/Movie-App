@@ -42,7 +42,7 @@ function MoviesPage() {
   }, []);
   return (
     <div className={styling.page_container}>
-      <h1 className={styling.section_title}> Action </h1>
+      <p className={styling.section_title}> Action </p>
       <div className={styling.movie_container}>
         {actionMovies.length > 0 &&
           actionMovies.map((item) => (
@@ -55,7 +55,7 @@ function MoviesPage() {
             ></Card>
           ))}
       </div>
-      <h1 className={styling.section_title}> Animation </h1>
+      <p className={styling.section_title}> Animation </p>
       <div className={styling.movie_container}>
         {animationMovies.length > 0 &&
           animationMovies.map((item) => (
@@ -68,7 +68,7 @@ function MoviesPage() {
             ></Card>
           ))}
       </div>
-      <h1 className={styling.section_title}> Comedy </h1>
+      <p className={styling.section_title}> Comedy </p>
       <div className={styling.movie_container}>
         {comedyMovies.length > 0 &&
           comedyMovies.map((item) => (
@@ -81,7 +81,7 @@ function MoviesPage() {
             ></Card>
           ))}
       </div>
-      <h1 className={styling.section_title}> Crime </h1>
+      <p className={styling.section_title}> Crime </p>
       <div className={styling.movie_container}>
         {crimeMovies.length > 0 &&
           crimeMovies.map((item) => (
@@ -94,7 +94,7 @@ function MoviesPage() {
             ></Card>
           ))}
       </div>
-      <h1 className={styling.section_title}> Drama </h1>
+      <p className={styling.section_title}> Drama </p>
       <div className={styling.movie_container}>
         {dramaMovies.length > 0 &&
           dramaMovies.map((item) => (

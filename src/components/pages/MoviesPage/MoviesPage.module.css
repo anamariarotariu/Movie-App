@@ -3,6 +3,7 @@
 }
 .section_title {
   color: var(--section-title-color);
+  font-size: 25px;
   margin: 1em 3em;
 }
 .movie_container {
