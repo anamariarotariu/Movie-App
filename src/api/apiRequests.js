@@ -77,7 +77,7 @@ class apiRequests {
     const res_1 = await res.json();
     return res_1.results;
   }
-  async getTvShoesByGenre(genreId) {
+  async getTvShowsByGenre(genreId) {
     const url = `${API_URL}/discover/tv?api_key=${API_KEY}&with_genres=${genreId}`;
     const res = await fetch(url);
     const res_1 = await res.json();
