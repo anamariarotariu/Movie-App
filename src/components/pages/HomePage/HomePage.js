@@ -4,6 +4,14 @@ import styling from "./HomePage.module.css";
 import { useState, useEffect } from "react";
 
 function HomePage() {
+  function getTv() {
+    return "tv";
+  }
+  function getMovieType() {
+    return "movie";
+  }
+  const tv = getTv();
+  const movie = getMovieType();
   const [movies, setMovies] = useState([]);
   const [tvShows, setTvShows] = useState([]);
   useEffect(() => {
@@ -15,8 +23,6 @@ function HomePage() {
       .catch((error) => {
         console.log(error);
       });
-  }, []);
-  useEffect(() => {
     apiRequests
       .getTopRatedTvShows()
       .then((res) => {
@@ -26,6 +32,7 @@ function HomePage() {
         console.log(error);
       });
   }, []);
+
   return (
     <div>
       <div>
@@ -40,6 +47,7 @@ function HomePage() {
                 title={item.title}
                 score={item.vote_average}
                 posterPath={item.poster_path}
+                content={movie}
               >
                 {" "}
               </Card>
@@ -58,6 +66,7 @@ function HomePage() {
                 title={item.name}
                 score={item.vote_average}
                 posterPath={item.poster_path}
+                content={tv}
               >
                 {" "}
               </Card>

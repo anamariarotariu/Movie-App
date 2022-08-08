@@ -104,6 +104,7 @@ function MoviesPage() {
               title={item.name}
               score={item.vote_average}
               posterPath={item.poster_path}
+              content={"movie"}
             ></Card>
           ))}
       </div>

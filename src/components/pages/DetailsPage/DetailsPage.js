@@ -20,8 +20,6 @@ function DetailsPage() {
         console.log(e);
         setLoading(false);
       });
-  }, [id]);
-  useEffect(() => {
     setLoading(true);
     apiRequests
       .getTvShowInfo(id)
@@ -36,7 +34,7 @@ function DetailsPage() {
   }, [id]);
 
   return (
-    <>
+    <div>
       {loading && <div className={styling.loading_text}>Loading...</div>}
       {!loading && movie && (
         <DetailsCard
@@ -47,7 +45,7 @@ function DetailsPage() {
           genre={movie.general.genres[1].name}
         ></DetailsCard>
       )}
-    </>
+    </div>
   );
 }
 export default DetailsPage;

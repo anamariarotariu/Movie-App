@@ -53,6 +53,7 @@ function TvShowPage() {
               title={item.name}
               score={item.vote_average}
               posterPath={item.poster_path}
+          
             ></Card>
           ))}
       </div>
