@@ -5,6 +5,7 @@ import PopularPage from "./components/pages/PopularPage/PopularPage";
 import ComingSoonPage from "./components/pages/ComingSoonPage/ComingSoonPage";
 import DetailsPage from "./components/pages/DetailsPage/DetailsPage";
 import MoviesPage from "./components/pages/MoviesPage/MoviesPage";
+import TvShowPage from "./components/pages/TvShowsPage/TvShowPage";
 function App() {
   return (
     <BrowserRouter>
@@ -21,6 +22,7 @@ function App() {
           <Route path="/movies" element={<MoviesPage></MoviesPage>}>
             {" "}
           </Route>
+          <Route path="/tv-shows" element={<TvShowPage></TvShowPage>}></Route>
         </Routes>
       </Layout>
     </BrowserRouter>
