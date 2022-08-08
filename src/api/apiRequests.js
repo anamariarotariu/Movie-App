@@ -71,5 +71,17 @@ class apiRequests {
     await Promise.all(fetchs);
     return tvShowData;
   }
+  async getMoviesByGenre(genreId) {
+    const url = `${API_URL}/discover/movie?api_key=${API_KEY}&with_genres=${genreId}`;
+    const res = await fetch(url);
+    const res_1 = await res.json();
+    return res_1.results;
+  }
+  async getTvShoesByGenre(genreId) {
+    const url = `${API_URL}/discover/tv?api_key=${API_KEY}&with_genres=${genreId}`;
+    const res = await fetch(url);
+    const res_1 = await res.json();
+    return res_1.results;
+  }
 }
 export default new apiRequests();

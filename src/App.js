@@ -4,6 +4,7 @@ import HomePage from "./components/pages/HomePage/HomePage";
 import PopularPage from "./components/pages/PopularPage/PopularPage";
 import ComingSoonPage from "./components/pages/ComingSoonPage/ComingSoonPage";
 import DetailsPage from "./components/pages/DetailsPage/DetailsPage";
+import MoviesPage from "./components/pages/MoviesPage/MoviesPage";
 function App() {
   return (
     <BrowserRouter>
@@ -15,6 +16,9 @@ function App() {
             {" "}
           </Route>
           <Route path="/show/:id" element={<DetailsPage />}>
+            {" "}
+          </Route>
+          <Route path="/movies" element={<MoviesPage></MoviesPage>}>
             {" "}
           </Route>
         </Routes>

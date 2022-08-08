@@ -1,0 +1,14 @@
+.page_container {
+  width: 400px;
+  height: 400px;
+}
+.section_title {
+  color: #fff;
+  margin: 1em 3em;
+}
+.movie_container {
+  padding: 0 50px;
+  width: 1400px;
+  display: flex;
+  overflow-x: scroll;
+}
